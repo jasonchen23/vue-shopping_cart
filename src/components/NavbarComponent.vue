@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/products">商品清單</router-link> | 
-    <router-link to="/">結帳(共有 {{amount}} 個商品)</router-link>
+    <router-link to="/checkout">結帳(共有 {{amount}} 個商品)</router-link>
   </nav>
 </template>
 <script>

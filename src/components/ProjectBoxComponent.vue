@@ -1,5 +1,5 @@
 <template>
-    <div class="products-box" @click="redirectProduct(id)">
+    <div :class="[{border: has_border},'products-box']" @click="redirectProduct(id)">
         <div class="image-box">
             <img :src="parseImgPath(img_path)">
         </div>
@@ -24,6 +24,10 @@ export default {
         'category': String,
         'name': String,
         'price': Number,
+        'has_border': {
+            type: Boolean,
+            default: false
+        }
     },
     methods: {
         parseImgPath: function(path) {
@@ -40,8 +44,10 @@ export default {
 </script>
 
 <style scoped>
-    div.products-box{
+    .border{
         border: 1px solid #888888;
+    }
+    div.products-box{
         min-width: 350px;
         width: 24%;
         text-align: center;
