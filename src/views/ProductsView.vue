@@ -9,6 +9,10 @@
 <script>
 import axios from 'axios'
 import ProductBox from '@/components/ProjectBoxComponent.vue'
+// function test(){
+//     console.log("hello")
+// };
+// test();
 export default {
     components: {
         ProductBox

@@ -4,7 +4,7 @@ import createPersistedState from 'vuex-persistedstate'
 // import axios from 'axios'
 export default createStore({
   state: {
-    serverPath:'http://35.234.34.149',
+    serverPath:'https://158.101.150.132:8008',
     cart:[]
   },
   getters: {
